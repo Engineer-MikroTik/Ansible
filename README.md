@@ -16,3 +16,5 @@ Install_Nginx/hosts это файл inventory, -l ограничивает за�
 С запросом пароля (просит поставить apt install sshpass)
 
 ansible -i Install_Nginx/hosts all -m ping -u firstnamelast --ask-pass
+
+### git fetch && git pull
