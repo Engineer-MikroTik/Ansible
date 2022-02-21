@@ -16,4 +16,6 @@ Install_Nginx/hosts это файл inventory, -l ограничивает за�
 
 ansible -i Install_Nginx/hosts all -m ping -u username --ask-pass
 
+ansible -i Install_Nginx/hosts all -a "df -h" -u username --ask-pass
+
 ### git fetch && git pull
