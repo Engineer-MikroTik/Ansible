@@ -3,7 +3,7 @@
 #
 Запуск:
 
-ansible-playbook -i Install_Nginx/hosts -l 10.254.251.100 Install_Nginx/install.yml
+ansible-playbook -i hosts install.yml -u firstlatestname --ask-pass
 
 Здесь:
 
