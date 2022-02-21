@@ -3,7 +3,7 @@
 #
 Запуск:
 
-ansible-playbook -i hosts install.yml -u firstlatestname --ask-pass
+ansible-playbook -i hosts install.yml -u ansible --ask-pass
 
 Здесь:
 
@@ -14,7 +14,7 @@ Install_Nginx/hosts это файл inventory, -l ограничивает за�
 
 С запросом пароля (просит поставить apt install sshpass)
 
-ansible -i Install_Nginx/hosts all -m ping -u username --ask-pass
+ansible -i hosts all -m ping -u ansible --ask-pass
 
 ansible -i Install_Nginx/hosts all -a "df -h" -u username --ask-pass
 
