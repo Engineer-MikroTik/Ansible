@@ -13,6 +13,6 @@ Install_Nginx/hosts это файл inventory, -l ограничивает за�
 #
 Обычная проверка:
 
-ansible -i Install_Nginx/hosts all -m ping --ask-become-pass
+С запросом пароля (просит поставить apt install sshpass)
 
-ansible -i Install_Nginx/hosts all -m ping -u firstnamelast --ask-become-pass
+ansible -i Install_Nginx/hosts all -m ping -u firstnamelast --ask-pass
